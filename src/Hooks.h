@@ -13,7 +13,7 @@ namespace Hooks
 			// hook both cases where the internal clip generator can be activated - add triggers from annotations, and remove the prefixes from the triggers not coming from annotations
 			static REL::Relocation<uintptr_t> synchronizedClipActivateFunc{ REL::VariantID(62112, 63048, 0xB0CD30) };  // AD2320, AF6B30, B0CD30
 			SKSE::AllocTrampoline(14);
-			_BSSynchronizedClipGenerator_Activate_ActivateInternalClip = trampoline.write_call<5>(synchronizedClipActivateFunc.address() + REL::VariantOffset(0x14C, 0x14C, 0x14C).offset(), BSSynchronizedClipGenerator_Activate_ActivateInternalClip);
+			_BSSynchronizedClipGenerator_Activate_ActivateInternalClip = trampoline.write_call<5>(synchronizedClipActivateFunc.address() + REL::VariantOffset(0x14C, 0x14C, 0x158).offset(), BSSynchronizedClipGenerator_Activate_ActivateInternalClip);
 
 			static REL::Relocation<uintptr_t> synchronizedClipUpdateFunc{ REL::VariantID(62114, 63050, 0xB0D0B0) };  // AD2690, AF6EA0, B0D0B0
 			SKSE::AllocTrampoline(14);
