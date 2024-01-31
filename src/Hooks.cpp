@@ -55,10 +55,6 @@ namespace Hooks
 			return;
 		}
 
-		if (!a_clipGenerator->triggers || a_clipGenerator->triggers->triggers.empty()) {
-			return;
-		}
-
 		const auto& hkbBehaviorGraph = a_context.behavior;
 		if (!hkbBehaviorGraph) {
 			logger::error("    == a_context.behavior is null! ==");
